@@ -78,6 +78,8 @@ INT_PTR CALLBACK WndProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 		Calc = new Calculator();
 		SetWindowSubclass(GetDlgItem(hDlg, IDC_EDIT1), NewWndProcEdit, 0, 0);
 		SetWindowSubclass(GetDlgItem(hDlg, IDC_EDIT2), NewWndProcEdit, 0, 0);
+		SendDlgItemMessage(hDlg, IDC_EDIT1, EM_SETLIMITTEXT, 18, 0);
+		SendDlgItemMessage(hDlg, IDC_EDIT2, EM_SETLIMITTEXT, 18, 0);
         return (INT_PTR)TRUE;
     case WM_COMMAND:
 		switch (LOWORD(wParam))
