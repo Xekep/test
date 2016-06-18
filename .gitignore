@@ -1,3 +1,10 @@
+*.pdb
+*.ipdb
+*.iobj
+*.db
+*.obj
+*.tlog
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -27,7 +34,6 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
-
 # Thumbnails
 ._*
 
@@ -38,6 +44,8 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
+ipch
+Debug
 
 # Directories potentially created on remote AFP share
 .AppleDB
